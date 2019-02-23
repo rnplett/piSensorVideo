@@ -1,10 +1,5 @@
-import datetime, re, os
-from pandas import Series, DataFrame
 from flask import Flask
 from flask import send_file
-from inputs.settings import *
-import requests
-#from flask import request
 
 app = Flask(__name__)
 
