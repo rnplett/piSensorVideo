@@ -22,16 +22,4 @@ def cam():
 
 @app.route('/who')
 def who():
-    url = "https://api.meraki.com/api/v0/organizations"
-    #querystring = {""}
-    headers = {
-       'Cache-Control': "no-cache",
-       'X-Cisco-Meraki-API-Key': MERAKI_KEY
-       }
-    #response = requests.request("GET", url, headers=headers, params=querystring)
-    response = requests.request("GET", url, headers=headers)
-
-    r = response.text
-    print(response.text)
-
-    return r
+    return "This is a message to display who."
