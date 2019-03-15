@@ -14,7 +14,7 @@ def hello():
 
 @app.route('/cam')
 def cam():
-    subprocess.run(["fswebcam --no-banner data/image.jpg")
+    subprocess.run(["fswebcam --no-banner data/image.jpg"])
     return send_file('data/image.jpg', mimetype='image/gif')
 
 @app.route('/who')
