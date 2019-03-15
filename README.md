@@ -13,6 +13,10 @@ For Windows:
 
 For all other systems:
 FLASK_APP=mqdMain.py flask run
+
+Alternatively if not on localhost:
+FLASK_APP=mqdMain.py flask run --host=x.x.x.x
+
 ```
 
 After you issue the above command you can now put the following url into your web browser to test this simple vote collecting app.
