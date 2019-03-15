@@ -20,3 +20,15 @@ FLASK_APP=mqdMain.py flask run --host=x.x.x.x
 ```
 
 After you issue the above command you can now put the following url into your web browser to test this simple vote collecting app.
+
+To add a camera image manually to the data folder change to the data directory and issue the following command.
+
+```
+fswebcam image.jpg
+```
+
+To remove the banner on the bottom add 
+```
+--no-banner
+```
+
