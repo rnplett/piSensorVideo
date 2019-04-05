@@ -1,3 +1,5 @@
+#!./venv/bin
+
 from flask import Flask
 from flask import send_file
 import os
@@ -15,6 +17,12 @@ def hello():
 @app.route('/cam')
 def cam():
     os.system("fswebcam --no-banner data/image.jpg")
+    return send_file('data/image.jpg', mimetype='image/gif')
+
+@app.route('/qr')
+def cam():
+    os.system("fswebcam --no-banner data/image.jpg")
+
     return send_file('data/image.jpg', mimetype='image/gif')
 
 @app.route('/who')
