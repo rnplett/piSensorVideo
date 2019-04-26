@@ -10,8 +10,8 @@ def on_connect(client, userdata, flags, rc):
  
     # Subscribing in on_connect() - if we lose the connection and
     # reconnect then subscriptions will be renewed.
-    client.subscribe("CoreElectronics/test")
-    client.subscribe("CoreElectronics/topic")
+    client.subscribe("CalgaryKineticEfmLab/test")
+    client.subscribe("CalgaryKineticEfmLab/TempSim")
  
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
